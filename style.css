@@ -1,0 +1,190 @@
+body {
+    font-family: 'Cormorant SC';
+    font-size: 23px;
+    color: rgb(71, 50, 96);
+    text-shadow: 0.7px 0.7px rgb(201, 201, 201);
+    background-color: rgb(255, 241, 233);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(15, 78, 154);
+    text-shadow: 0.7px 0.7px rgb(201, 201, 201);
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+}
+
+hr {
+    width: auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+section h1 {
+    text-decoration: underline;
+}
+
+.header h1 {
+    text-shadow: 1.5px 1.5px rgb(201, 201, 201);
+}
+
+h3 {
+    color: maroon;
+}
+
+ul {
+    margin: 0;
+    list-style-type: square;
+}
+
+/* header */
+.header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 3px 8px 2px rgb(148, 148, 148);
+    font-family: 'Tangerine';
+    font-size: 25px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.header-description {
+    font-family: 'Cormorant SC';
+    font-size: 14px;
+    font-style: italic;
+}
+
+.harp-png-hidden {
+    visibility: hidden;
+}
+
+/* navigation  */
+.nav {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    font-family: 'Tangerine';
+    font-size: 35px;
+    width: auto;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-item:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+.nav-item:hover:after {
+    width: 100%;
+	background: rgb(255, 117, 158);
+}
+
+/* advertisement */
+.advert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url('/moroccan-flower-dark.png');
+    background-attachment: fixed;
+    padding: 20px;
+    margin: 0;
+}
+
+.advert h1 {
+    color: rgb(255, 177, 59);
+    font-size: 50px;
+    text-shadow: 1.5px 1.5px rgb(15, 77, 104);
+}
+
+.multiple-harps {
+    padding: 20px;
+    width: 600px;
+}
+
+/* main content */
+.maindiv {
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    max-width: 800px;
+    
+}
+
+/* footer */
+footer {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px -3px 8px 1px rgb(148, 148, 148);
+}
+
+.phone-num {
+    color: maroon;
+    font-size: 35px;
+}
+
+.watermark {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 600px) {
+    .nav {
+        justify-content: center;
+    }
+    .nav-item {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .harp-png {
+        width: 90px;
+        height: 90px;
+    }
+    .harp-png-hidden {
+        width: 90px;
+        height: 90px;
+    }
+    .multiple-harps {
+        width: 300px;
+    }
+    .advert h1 {
+        font-size: 40px;
+    }
+}
