@@ -44,6 +44,7 @@ hr {
 
 h2 {
     font-size: 35px;
+    color: var(--bright-white);
     text-decoration: underline;
 }
 
