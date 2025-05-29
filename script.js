@@ -10,5 +10,5 @@ function carousel() {
   myIndex++;
   if (myIndex > slide.length) {myIndex = 1}    
   slide[myIndex-1].style.display = "inline-block";  
-  setTimeout(carousel, 9000); // Change image every 4 seconds
+  setTimeout(carousel, 9000);
 }

@@ -67,12 +67,24 @@ header {
     justify-content: center;
 }
 
-.harp-png {
+/* .harp-png {
     margin-right: 10px;
+} */
+
+.img-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.multiple-harps {
-    margin-top: 20px;
+.harps-img {
+    height: 300px;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .header-description {
@@ -125,6 +137,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     text-align: center;
     background-image: url('moroccan-flower-dark.png');
@@ -205,15 +218,6 @@ footer {
 @media screen and (max-width: 600px) {
     h2 {
         font-size: 30px;
-    }
-
-    .harp-png {
-        width: 90px;
-        height: 90px;
-    }
-
-    .multiple-harps {
-        width: 300px;
     }
 
     .slide {
